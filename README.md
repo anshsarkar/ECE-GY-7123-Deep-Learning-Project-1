@@ -4,7 +4,7 @@
 - Ansh Sarkar (as20363@nyu.edu)
 - Princy Doshi (pd2672@nyu.edu)
 - Simran Kucheria (sk11645@nyu.edu)
----
+
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ The goal of this project was to train and test a ResNet model on the CIFAR-10 da
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/anshsarkar/ECE-GY-7123-Deep-Learning-Project-1)
 
----
+
 
 ## Model Architecture
 
@@ -33,8 +33,9 @@ We implemented a variant of the ResNet architecture using **BasicBlocks**, which
 - **Weight Decay**: 0.0005
 - **Total Epochs**: 200
 - **Lookahead Alpha**: 0.5
+- **Lookahead K**: 5
 
----
+
 
 ## Methodology
 
@@ -50,7 +51,7 @@ We experimented with various data augmentation techniques to improve model perfo
 - **L2 Regularization**: Applied through weight decay to prevent overfitting.
 - **Label Smoothing**: Improved model generalization by creating "soft" labels.
 
----
+
 
 ## Results
 
@@ -60,7 +61,7 @@ Our final model achieved:
 
 The model began to converge around **200 epochs**, with the accuracy plateauing at this point.
 
----
+
 
 ## References
 
@@ -68,10 +69,10 @@ The model began to converge around **200 epochs**, with the accuracy plateauing 
 - DeVries, T., & Taylor, G. W. (2017). [Improved Regularization of Convolutional Neural Networks with Cutout](https://arxiv.org/abs/1708.04552).
 - Zhang, M. R., Lucas, J., Hinton, G., & Ba, J. (2019). [Lookahead Optimizer: k steps forward, 1 step back](https://arxiv.org/abs/1907.08610).
 
----
+
 
 ## Figures
 
-- **Training Loss vs Epochs**: ![Training Loss](training_loss.png)
-- **Testing Loss vs Epochs**: ![Testing Loss](testing_loss.png)
-- **Accuracy vs Epochs**: ![Accuracy](accuracy.png)
+- **Training Loss vs Epochs**: ![Training Loss](./plots/EpochVsLossTrain.png)
+- **Testing Loss vs Epochs**: ![Testing Loss](./plots/EpochVsLossTest.png)
+- **Accuracy vs Epochs**: ![Accuracy](./plots/EpochVsAccuracy.png)
